@@ -37,12 +37,13 @@ function App() {
           >
             Causes
           </button>
-          <button
-            className={activeSection === "project" ? "btn btn-primary" : "btn btn-danger"}
-            onClick={() => setActiveSection("project")}
-          >
-            Contact
-          </button>
+         <button
+  className={activeSection === "contact" ? "btn btn-primary" : "btn btn-danger"}
+  onClick={() => setActiveSection("contact")}
+>
+  Contact
+</button>
+
         </nav>
       </header>
 
