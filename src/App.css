@@ -1,0 +1,345 @@
+/* General */
+.App {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Top Section */
+.top-section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  background-color: #e0f2f1;
+}
+
+/* Logo + Title (Top-left) */
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-title .logo {
+  font-size: 40px;
+}
+
+.logo-title .title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+/* Navbar below title */
+.nav-items {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.nav-items a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-items a:hover {
+  text-decoration: underline;
+}
+
+/* Middle Section */
+.middle-section {
+  position: relative;
+  text-align: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dcedc1;
+}
+
+.center-msg {
+  color: #2e7d32;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.center-msg h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.center-msg p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.center-msg button {
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: #66bb6a;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.center-msg button:hover {
+  background-color: #4caf50;
+}
+
+/* About Section */
+/* General container styles */
+.about-container, .causes-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Headings */
+.about-heading, .causes-heading {
+  font-size: 32px;
+  font-weight: bold;
+  color: #003366;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+/* Highlight text */
+.highlight {
+  color: #1a5f2e;
+  font-weight: bold;
+}
+
+/* About content */
+.about-item, .cause-item {
+  margin-bottom: 50px;
+}
+
+.about-content, .cause-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Image rows */
+.image-row, .cause-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* Image cards */
+.hover-img, .cause-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.hover-img:hover, .cause-card img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Footer quotes */
+.footer-quote, .causes-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 22px;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Causes Section */
+/* Causes container */
+.causes-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8f5; /* Light greenish background for causes section */
+  border-radius: 10px;
+}
+
+/* Causes heading */
+.causes-heading {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2e7d32;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Individual cause item */
+.cause-item {
+  margin-bottom: 50px;
+}
+
+/* Cause cards row */
+.cause-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* Individual card styling */
+.cause-card {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.cause-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hover effect for card images */
+.cause-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Footer quote for causes section */
+.causes-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 22px;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Contact Section */
+.contactform-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background: linear-gradient(to right, #a8e6cf, #dcedc1);
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.contactform-container h2 {
+  color: #2e7d32;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.contactform-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contactform-form input,
+.contactform-form textarea {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #2e7d32;
+  font-size: 16px;
+  resize: none;
+}
+
+.contactform-form textarea {
+  height: 120px;
+}
+
+.contactform-form button {
+  padding: 12px;
+  font-size: 18px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contactform-form button:hover {
+  background-color: #1a5f2e;
+}
+
+.status {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #006400;
+}
+/*project section*/
+.project-main-title {
+  color: #2e7d32; /* green */
+  font-size: 2rem;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.project-heading-left {
+  color: #2e7d32;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.project-intro-left {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: left;
+  max-width: 900px;
+}
+
+.project-flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.project-card {
+  background: #f0fff0;
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.project-card img,
+.project-card video {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.project-footer {
+  margin-top: 50px;
+  background: #e0ffe0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
